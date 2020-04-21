@@ -3608,7 +3608,7 @@ input[type=file]{
 .profile-header{min-height:110px;}
 .profile-header .profile-left{padding:0px 130px 0px 20px}
 .profile-header .profile-left h1{font-weight:600;}
-.profile-header .profile-left p{font-size:12px; line-height:22px; margin-bottom:10px;}
+.profile-header .profile-left p{font-size:12px; line-height:20px; margin-bottom:10px;}
 .profile-header .profile-left a{float:left; font-weight:600; font-size:11px; margin-right:20px;}
 .profile-header .profile-left a span{font-weight:400; opacity:0.5; padding-right:5px;}
 .profile-header .profile-right{top:0px; position:absolute; right:10px;}
