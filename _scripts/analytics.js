@@ -125,6 +125,8 @@ function setupAnalytics() {
       .trim()
       .replace(/\s{2,}/g, ' ')
       .replace(/\s/g, '-')
+      .replace(/\./g, '-')
+      .replace(/_/g, '-')
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
