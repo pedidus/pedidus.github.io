@@ -1,7 +1,12 @@
 setupAnalytics();
 
+// script requires ES6 features. All browsers except IE11.
 function setupAnalytics() {
-  // ganalytics API: https://github.com/lukeed/ganalytics
+  var id = 'UA-164287373-2' // DEV env
+  if(document.location.href.startsWith("https://pedid.us")){
+    id = 'UA-164287373-1' // PROD env
+  }
+  // ganalytics API: https://github.com/lukeed/ganalytics  
   const ga = ganalytics('UA-164287373-2');
   
   //--------------------------------------------------------------------------
@@ -11,8 +16,6 @@ function setupAnalytics() {
     .querySelectorAll('[data-track-product-open]')
     .forEach(item => item.addEventListener('click',(event) => {
       const productDomNode = event.currentTarget
-      console.log(productDomNode)
-      console.log(productName(productDomNode))
       // 1. virtual page view (funnel)
       ga.send('pageview', {
         dt: document.title, 
