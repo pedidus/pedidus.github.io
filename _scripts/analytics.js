@@ -7,7 +7,7 @@ function setupAnalytics() {
     id = 'UA-164287373-1' // PROD env
   }
   // ganalytics API: https://github.com/lukeed/ganalytics  
-  const ga = ganalytics('UA-164287373-2');
+  const ga = ganalytics(id);
   
   //--------------------------------------------------------------------------
   // 'Product open' tracking
