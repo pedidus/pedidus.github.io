@@ -1,6 +1,25 @@
+/*
+  Script requires ES6 features. All browsers except IE11.
+
+  To implement tracking on a shop page, just create the shop page by copying
+  _template/index.html, that is already setup with tracking.
+
+  To implement tracking on a exsiting page, add all tracking attributes to the
+  html where required (search in _template/index.html for tags, to see where they
+  are required. Tags:
+    data-track-product-open
+    data-track-product-name
+    data-track-product-price
+    data-track-product-order
+    data-track-product-order-parent
+    data-track-generic-contact
+  Also add the <script> tag to load the analytics script, as shown at the bottom of
+  _template/index.html.
+*/
+
+
 setupAnalytics();
 
-// script requires ES6 features. All browsers except IE11.
 function setupAnalytics() {
   var id = 'UA-164287373-2' // DEV env
   if(document.location.href.startsWith("https://pedid.us")){
