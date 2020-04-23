@@ -149,15 +149,16 @@ function setupAnalytics() {
   */
   function productPrice(domNode){
     if(! domNode){
-      return 'unknown'
+      return 0
     }
     const priceNode = domNode.querySelector('[data-track-product-price]')
     if(! priceNode){
-      return 'unknown'
+      return 0
     }
-    return priceNode
+    const price =  priceNode
       .innerText
       .replace(/^\D*(\d*).*/g, '$1')
+    return parseInt(price, 10)
   }
 
   /*
