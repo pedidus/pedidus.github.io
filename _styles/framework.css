@@ -187,7 +187,7 @@ h2{font-size:21px; line-height:25px}
 h3{font-size:20px; line-height:24px}
 h4{font-size:18px; line-height:23px}
 h5{font-size:17px; line-height:22px}
-.under-heading{margin-top:-6px; display:block;}
+.under-heading{margin-top:-8px; display:block;}
 .heading-icon{float:right;}
 
 .color-skin{color:#000;}
@@ -1955,7 +1955,7 @@ h5{font-size:17px; line-height:22px}
 
 /*Filter*/
 .gallery-filter *{
-    overflow:visible!important;
+    /*overflow:visible!important;*/
 }
 .gallery-filter-all{
 	float:left!important;
@@ -1968,7 +1968,7 @@ h5{font-size:17px; line-height:22px}
 .gallery-filter-controls li{
 	list-style:none;
 	cursor: pointer;
-	float:right;
+	float:left;
 	padding-left:15px;
     font-weight:500;
     color:#1f1f1f;
@@ -1976,7 +1976,7 @@ h5{font-size:17px; line-height:22px}
 	transition:all 350ms ease;
 }
 .gallery-filter-controls li:first-child{
-	padding-right:30px;
+	/*padding-right:30px;*/
 }
 .gallery-filter-controls{
     width:100%;
@@ -1989,15 +1989,7 @@ h5{font-size:17px; line-height:22px}
 	margin-right:-5px;
 }
 .gallery-filter a{
-	width:33.3%;
-	padding:5px;
-	display:block;
 	transition:height 350ms ease;
-}
-.gallery-filter a img{
-	display:block;
-	width:100%;
-    box-shadow:0 2px 14px 0 rgba(0,0,0,0.08);
 }
 
 /*Thumbs*/
